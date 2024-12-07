@@ -1,8 +1,8 @@
 const express = require('express');
-const connectDB = require('./config/database');
-const authRoutes = require('./delivery/routes/authRoutes');
-const bookRoutes = require('./delivery/routes/bookRoutes');
-const { PORT } = require('./config/env');
+const connectDB = require('../config/database');
+const authRoutes = require('../delivery/routes/authRoutes');
+const bookRoutes = require('../delivery/routes/bookRoutes');
+const { PORT } = require('../config/env');
 
 const app = express();
 
