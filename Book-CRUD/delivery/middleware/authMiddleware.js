@@ -1,4 +1,4 @@
-const { verifyToken } = require('../internal/utils/tokenUtil');
+const { verifyToken } = require('../../internal/utils/tokenUtil');
 
 exports.authenticateJWT = (req, res, next) => {
   const token = req.header('Authorization')?.split(' ')[1];

@@ -1,9 +1,9 @@
 const express = require('express');
 const { check } = require('express-validator');
-const bookController = require('../Controllers/BookController');
+const bookController = require('../controllers/BookController');
 const { authenticateJWT } = require('../middleware/authMiddleware');
 const { checkRole } = require('../middleware/rbacMiddleware');
-const { bookValidation } = require('../validation/bookValidation');
+const { bookValidation } = require('../../validation/bookValidation');
 
 const router = express.Router();
 

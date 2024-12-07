@@ -1,4 +1,4 @@
-const { signup, login } = require('../Usecase/authUsecase');
+const { signup, login } = require('../../Usecase/authUsecase');
 
 exports.signup = async (req, res) => {
   try {

@@ -1,5 +1,5 @@
 const { validationResult } = require('express-validator');
-const bookUsecase = require('../Usecase/bookUsecase');
+const bookUsecase = require('../../Usecase/bookUsecase');
 
 exports.getBooks = async (req, res) => {
   try {
