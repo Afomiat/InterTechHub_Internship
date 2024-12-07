@@ -1,7 +1,7 @@
 const express = require('express');
 const connectDB = require('./config/database');
-const authRoutes = require('./routes/authRoutes');
-const bookRoutes = require('./routes/bookRoutes');
+const authRoutes = require('./delivery/routes/authRoutes');
+const bookRoutes = require('./delivery/routes/bookRoutes');
 const { PORT } = require('./config/env');
 
 const app = express();
