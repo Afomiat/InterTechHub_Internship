@@ -1,4 +1,4 @@
-const { findAllBooks, findBooksByUserId, createBook, updateBook, deleteBook, markAsFavorite, getRandomBook } = require('../Repository/bookRepository');
+const { findAllBooks, findBooksByUserId, createBook, updateBook, deleteBook, markAsFavorite, getRandomBook,findAllFavoriteBooks } = require('../Repository/bookRepository');
 
 exports.getBooks = async (userId) => {
   return await findBooksByUserId(userId);
@@ -25,7 +25,7 @@ exports.getAllBooks = async () => {
 };
 
 exports.getRecommendations = async () => {
-  return await findAllBooks({ isFavorite: true });
+  return await findAllFavoriteBooks();
 };
 
 exports.getRandomBook = async () => {

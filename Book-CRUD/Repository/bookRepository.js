@@ -4,6 +4,11 @@ exports.findAllBooks = async () => {
   return await Book.find();
 };
 
+exports.findAllFavoriteBooks = async () => {
+  return await Book.find({ isFavorite: true });
+};
+
+
 exports.findBooksByUserId = async (userId) => {
   return await Book.find({ userId });
 };
