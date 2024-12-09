@@ -147,12 +147,18 @@ JWT_SECRET=<Your-JWT-Secret>
 
 # Usage
 
-## Testing the API
+# 📚 Role-Restricted Routes with JWT Tokens
 
-Include the JWT token in the Authorization header for protected routes:
-text
+This project secures role-restricted routes in a web application using **JWT Tokens** for authentication and role-based access control.
 
-Authorization: Bearer <JWT-Token>
+---
+
+## 🔐 Accessing Protected Routes
+Include the JWT token in the request headers to access restricted endpoints.  
+
+### Example Header:
+Authorization: Bearer <your_jwt_token>
+
 
 # Deployment
 The API is deployed and accessible at: Deployed API URL
